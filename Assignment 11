@@ -1,0 +1,57 @@
+#Create a Generator function to replicate range()
+
+def createList(r1, r2):
+    if (r1 == r2):
+        return r1
+    else:
+        res = []
+        while(r1 < r2+1 ):
+            res.append(r1)
+            r1 += 1
+            return res
+
+r1, r2 = -1, 1
+print(createList(r1, r2))
+
+#Create a Recursive function to replicate range()
+def create_list(r1, r2, lst):
+	
+	if r1 == r2+1:
+		return lst
+	
+	else:
+		lst.append(r1)
+		return create_list(r1 + 1, r2, lst)
+
+
+print(create_list(5, 9, [])) # [5, 6, 7, 8, 9]
+print(create_list(-1, 1, [])) # [-1, 0, 1]
+
+
+#Create a Recursive and lambda function - Greatest Common Divisor (GCD)
+
+def hcf(a, b):
+	if(b == 0):
+		return a
+	else:
+		return hcf(b, a % b)
+
+a = 60
+b = 48
+
+print("The gcd of 60 and 48 is : ", end="")
+print(hcf(60, 48))
+
+gcd = lambda a, b: a if b == 0 else gcd(b, a % b)
+
+
+print("The gcd of 60 and 48 is:", gcd(a, b))
+
+
+#Create A module using an Editor / IDE
+import mod
+
+
+mod.mod()
+
+print(mod.location)
