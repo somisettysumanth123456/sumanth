@@ -1,0 +1,37 @@
+#write a program to find power of given number
+base = 5
+exponent = 4
+result = 1
+
+print("Value of base: ", base);
+print("Value of exponent: ", exponent);
+
+for exponent in range(exponent, 0, -1):
+    result *= base
+
+print("Output: " + str(result))
+#Explain left/right shift with examples
+x = 32
+
+# Shift by one position to the left
+res = x << 1
+print(res)
+# 64
+
+# Shift by two positions to the left
+res = x << 2
+print(res)
+# 128
+#How & bitwise operator works
+a = 60            # 60 = 0011 1100 
+b = 13            # 13 = 0000 1101 
+c = 0
+
+c = a & b;        # 12 = 0000 1100
+print "Line 1 - Value of c is ", c
+
+
+
+c
+#How and operator, & operator defers each other
+print("And of true and false:",True and False)
