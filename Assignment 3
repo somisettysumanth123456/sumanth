@@ -1,0 +1,20 @@
+#Create Variables with any Object using Various Naming Conventions
+my_variable = 10
+num_users = 500
+abc123 = "Hello"
+name = "Hello"
+class Car:
+    def __init__(self, color, make, model):
+        self.color = color
+        self.make = make
+        self.model = model
+my_car = Car('red', 'Toyota', 'Corolla')
+MAX_SIZE = 100 #global variable
+PI_VALUE = 3.14159
+#Reverse a String using slicing 
+letters = "ABCDEF"
+print(letters[::-1])
+#Explore dir() & help()
+import math
+print(dir(math))
+help(math)
