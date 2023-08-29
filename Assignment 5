@@ -1,0 +1,58 @@
+#Write Examples code for concatenation
+a="var1"
+b="var2"
+print(a+b)
+#Write one Examples for each formatting techniques
+person = {"name": "John", "age": 30, "city": "New York"}
+print("My name is %(name)s, I am %(age)d years old, and I live in %(city)s." % person) 
+#Go Through Reference site and apply various options into formatting techniques
+price = 19.99
+print("The price is: $%.2f" % price)
+a=10
+print("the value of a is: %d"%a)
+b="hi"
+print("the string:%s"%b)
+#Write example for each arithmetic operators
+a = 7
+b = 3
+
+# addition
+print ('Sum: ', a + b)  
+
+# subtraction
+print ('Subtraction: ', a - b)   
+
+# multiplication
+print ('Multiplication: ', a * b)  
+
+# division
+print ('Division: ', a / b) 
+
+# floor division
+print ('Floor Division: ', a // b)
+
+# modulo
+print ('Modulo: ', a % b)  
+
+# a to the power b
+print ('Power: ', a ** b)   
+#Write Example for assignment operators (except: = & +=)
+a = 21
+b = 10
+c = 0
+
+c *= a
+print ("Line 1 - Value of c is ", c) 
+
+c /= a 
+print ("Line 2 - Value of c is ", c) 
+
+c  = 2
+c %= a
+print ("Line 3 - Value of c is ", c)
+
+c **= a
+print ("Line 4 - Value of c is ", c)
+
+c //= a
+print ("Line 5 - Value of c is ", c)
