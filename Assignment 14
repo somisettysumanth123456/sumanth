@@ -1,0 +1,17 @@
+#TypeErrorHandling
+my_list = ["HI", "Hello", "Super", "Hi"]
+indices = [0, 1, "2", 3]
+for i in range(len(indices)):
+	try:
+		print(my_list[indices[i]])
+	except TypeError:
+		print("TypeError: Check list of indices")
+#NameErrorHandling
+def my_message():
+    try:
+        msg = "Hello"
+        return hello
+    except NameError:
+        return "NameError occurred. Some variable isn't defined."
+ 
+print(my_message())
