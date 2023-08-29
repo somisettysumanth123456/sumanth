@@ -1,0 +1,21 @@
+#Refer capitalize function in shared program files, replicate .upper() and .lower() functions
+def cap(s):
+    print(".upper():",s.upper())
+    print(".lower():",s.lower())
+cap("HI")
+cap("hi")
+#Create a odd sequence from given sequence [1,2,34,65,1,2,65,66,44,33,22,87,123412,09,78,76]
+s=[1,2,34,65,1,2,65,66,44,33,22,87,123412,9,78,76]
+
+for num in s:
+    if num % 2 != 0:
+        print(num, end=" ")
+#{‘apple’: 10, ‘mango’: 20, ‘pineapple’: 25, ‘orange’: 30, ‘strawberry’: 50, ‘jackfruit’: 10}
+#Generate a comprehension fruits which has more than 20 
+d1={'apple': 10, 'mango': 20, 'pineapple': 25, 'orange': 30, 'strawberry': 50, 'jackfruit': 10}
+d={}
+for i in d1:
+    if(d1[i]>20):
+        d[i]=d1[i]
+print(" ")
+print(d)
